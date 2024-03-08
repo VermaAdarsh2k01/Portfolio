@@ -1,0 +1,36 @@
+@font-face {
+    font-family: akira;
+    src: url(./assets/fonts/akiraExpanded.otf);
+}
+
+.akira{
+    font-family: akira;
+}
+
+@font-face {
+    font-family: heading;
+    src: url(./assets/fonts/headingNowVariable.ttf);
+}
+
+.heading{
+    font-family: heading;
+}
+
+
+@font-face {
+    font-family: poppins;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+.poppins{
+    font-family: poppins;
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+
+.poppins-bold{
+    font-family: poppins-bold;
+}
