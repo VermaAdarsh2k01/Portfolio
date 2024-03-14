@@ -51,9 +51,9 @@ function Projects()  {
                 PROJECTS
             </p>
         </div> */}
-        <div className='proj-container max-w-full h-[100vh] flex items-center justify-center px-5 overfloy-x-hidden' ref={divRef}>
+        <div className='proj-container max-w-full h-[100vh] flex items-center justify-center px-5 overfloy-x-hidden  max-sm:flex-col-reverse max-sm:gap-10 max-sm:justify-center ' ref={divRef}>
             <div className='abtProj flex flex-col max-w-1/2 text-white px-10 gap-5' ref={abtRef} >
-                <h1 className='poppins-bold text-8xl text-[#C8A2C8]'>To-do app</h1>
+                <h1 className='poppins-bold text-8xl text-[#C8A2C8] max-sm:text-[5vw]'>To-do app</h1>
                 <p>This is an interactive task management application built with React that uses the traditional approach to task tracking. Implemented features such as task completion through color coding. The app empowers users to seamlessly drag and drop tasks which is left to user interactivity.</p>
             </div>
             <a href="https://roaring-centaur-05ed05.netlify.app/" target="_blank" rel="noopener noreferrer " className='max-w-1/2' ref={linkRef}>

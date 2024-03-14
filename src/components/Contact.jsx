@@ -32,13 +32,13 @@ function Contact() {
               end:'bottom -10%',
               pin:true,
               scrub:1,
-              markers:true
+            //   markers:true
             }
           })
 
         t1.from(textRef.current , {
             y:"50vh",
-            scale:5.2,
+            scale:1,
             ease:'power1.out'
         })
         .from(".icons" , {
@@ -60,18 +60,18 @@ function Contact() {
         <div className='w-full h-[100vh] bg-black'>
             <div className='div-cont w-full h-full flex flex-col items-center justify-center relative scrollToContact'>
                 <p className='absolute top-10 poppins-bold tracking-tighter text-gray-500 text-6xl' ref={textRef}>Contact</p>
-                <div className='links flex justify-around w-full' >
-                    <a className='flex flex-col justify-center items-center gap-8 icons' target='_blank' href='https://www.linkedin.com/in/adarsh-verma-2k01/'>
-                        <FaLinkedin size={200} color='#c8a2c8' />
-                        <p   className='text-4xl poppins-bold Linktext text-white'>See LinkedIn</p>
+                <div className='links flex justify-around w-full max-sm:flex-col ' >
+                    <a className='flex flex-col justify-center items-center gap-8 icons ' target='_blank' href='https://www.linkedin.com/in/adarsh-verma-2k01/'>
+                        <FaLinkedin size={200} color='#c8a2c8' className='max-sm:w-20 max-sm:h-20 '/>
+                        <p   className='text-4xl poppins-bold Linktext text-white max-sm:text-[5vw]'>See LinkedIn</p>
                     </a>
                     <a className='flex flex-col justify-center items-center gap-8 icons' target='-blank' href='https://www.linkedin.com/in/adarsh-verma-2k01/'>
-                        <FaGithub size={200} color='#c8a2c8'  />
-                        <p  className='text-4xl poppins-bold Linktext text-white'>See GitHub</p>
+                        <FaGithub size={200} color='#c8a2c8'  className='max-sm:w-20 max-sm:h-20 '/>
+                        <p  className='text-4xl poppins-bold Linktext text-white max-sm:text-[5vw]'>See GitHub</p>
                     </a>
                     <div className='flex flex-col justify-center items-center gap-8 icons' onClick={handleCopy} >
-                        <IoIosMail size={220} color='#c8a2c8'  />
-                        <p  className='text-4xl poppins-bold Linktext text-white'>Send Mail</p>
+                        <IoIosMail size={220} color='#c8a2c8' className='max-sm:w-20 max-sm:h-20 '/>
+                        <p  className='text-4xl poppins-bold Linktext text-white max-sm:text-[5vw]'>Send Mail</p>
                     </div> 
                 </div>
             </div>
